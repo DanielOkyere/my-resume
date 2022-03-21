@@ -291,7 +291,8 @@ section {
 .header-content .left-header .image img:hover {
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
-  scale: 1.1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .header-content .right-header {

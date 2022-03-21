@@ -202,7 +202,7 @@ section {
                 filter: grayscale(100%);
                 &:hover {
                     filter: grayscale(0);
-                    scale: 1.1;
+                    transform: scale(1.1);
                 }
                 border-radius: var(--br-sm-2);
             }
