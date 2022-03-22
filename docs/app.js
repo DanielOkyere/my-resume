@@ -24,7 +24,7 @@ allSections.addEventListener("click", function (e) {
             secBtns.forEach((btn) => {
                 btn.classList.remove("active");
             });
-            e.target.classList.add("active");
+            e.target.classList.add("active-btn");
 
             //Hide other sections
             sections.forEach((section) => {

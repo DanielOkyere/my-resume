@@ -61,7 +61,7 @@ section {
     position: absolute;
     left: 0;
     top: 0;
-    padding: 3rem 18rem;
+    padding: 1rem 1rem;
 }
 .section {
     transform: translateY(-100%) scale(0);
@@ -92,7 +92,7 @@ section {
     display: none;
     transform: translateY(0) scale(1);
 }
-.active {
+.active{
     display: block;
     animation: scaleAnim 1s ease-in-out;
     @keyframes scaleAnim {
@@ -295,7 +295,7 @@ section {
     grid-gap: 2rem;
     .progress-bars {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         grid-gap: 1rem;
         .progress-bar {
             display: flex;
@@ -429,6 +429,8 @@ section {
     .portfolio-item {
         position: relative;
         border-radius: 15px;
+        align-items: center;
+        justify-content: center;
         img {
             width: 100%;
             height: 300px;
@@ -446,7 +448,7 @@ section {
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-direction: column;
+            flex-direction: row;
             opacity: 0;
             scale: 0;
             transform: scale(0);

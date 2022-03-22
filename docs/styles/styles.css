@@ -66,7 +66,7 @@ section {
   position: absolute;
   left: 0;
   top: 0;
-  padding: 3rem 18rem;
+  padding: 1rem 1rem;
 }
 
 .section {
@@ -420,8 +420,8 @@ section {
 .about-stats .progress-bars {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
   grid-gap: 1rem;
 }
 
@@ -598,6 +598,12 @@ section {
 .portfolios .portfolio-item {
   position: relative;
   border-radius: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .portfolios .portfolio-item img {
@@ -625,10 +631,10 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   opacity: 0;
   scale: 0;
   -webkit-transform: scale(0);
@@ -1230,6 +1236,12 @@ section {
   }
   .main-title h2 .bg-text {
     font-size: 4rem;
+  }
+  .primary-btn {
+    padding: .5rem 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 /*# sourceMappingURL=styles.css.map */
