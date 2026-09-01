@@ -32,4 +32,26 @@ function PageTransitions() {
     })
 }
 
+const CONTACT_EMAIL = "daniel.kwame.okyere101@gmail.com";
+
+function ContactForm() {
+    const form = document.getElementById("contact-form");
+    if (!form) return;
+
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const name = form.elements["name"].value.trim();
+        const email = form.elements["email"].value.trim();
+        const subject = form.elements["subject"].value.trim();
+        const message = form.elements["message"].value.trim();
+
+        const body = `${message}\n\nFrom: ${name} (${email})`;
+        const mailtoUrl = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+        window.location.href = mailtoUrl;
+    });
+}
+
 PageTransitions();
+ContactForm();
